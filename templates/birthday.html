@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+<div class="container">
+  <h1>Генератор Привітань з Днем Народження</h1>
+
+  <form method="POST">
+    <input type="text" name="name" placeholder="Введіть ім'я" required />
+    <button type="submit">Згенерувати привітання</button>
+  </form>
+
+  {% if wish %}
+  <div class="wish-container">
+    <pre>{{ wish }}</pre>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
