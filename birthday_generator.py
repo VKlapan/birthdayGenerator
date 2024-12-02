@@ -2,6 +2,7 @@ import random
 
 class BirthdayWishGenerator:
     def __init__(self):
+        self.word0 = ['Nastya']
         self.word1 = [
             'the most beautiful person ever', 'the best friend one can dream of', 
             'the one of kindest people we know', 'a beautiful person inside and out', 
@@ -35,8 +36,8 @@ class BirthdayWishGenerator:
             'personal growth', 'exiting challenges'
         ]
 
-    def generate_wish(self, name):
-        return f'''Dear {name}! Happy Birthday! 
+    def generate_wish(self):
+        return f'''Dear {random.choice(self.word0)}! Happy Birthday! 
 You are {random.choice(self.word1)}. 
 We admire your {random.choice(self.word2)}{random.choice(self.word3)}. 
 We all know your superpower is {random.choice(self.word4)}, and we love it!

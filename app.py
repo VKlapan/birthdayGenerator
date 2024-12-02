@@ -8,8 +8,8 @@ generator = BirthdayWishGenerator()
 def home():
     wish = None
     if request.method == 'POST':
-        name = request.form.get('name', 'Friend')
-        wish = generator.generate_wish(name)
+        # name = request.form.get('name', 'Friend')
+        wish = generator.generate_wish()
     return render_template('birthday.html', wish=wish)
 
 if __name__ == '__main__':
