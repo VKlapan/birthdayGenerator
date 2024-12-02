@@ -37,9 +37,11 @@ class BirthdayWishGenerator:
         ]
 
     def generate_wish(self):
-        return f'''Dear {random.choice(self.word0)}! Happy Birthday! 
+        header = f"Dear {random.choice(self.word0)}! Happy Birthday!"
+        body = f'''
 You are {random.choice(self.word1)}. 
 We admire your {random.choice(self.word2)}{random.choice(self.word3)}. 
 We all know your superpower is {random.choice(self.word4)}, and we love it!
 We wish you happiness, health, wealth, and endless joy, {random.choice(self.word5)}, {random.choice(self.word6)}, and {random.choice(self.word7)}. 
-We love you and are hoping to share more moments like this!''' 
+We love you and are hoping to share more moments like this!'''
+        return header, body
