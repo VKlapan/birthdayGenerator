@@ -10,17 +10,31 @@
     />
   </head>
   <body>
-    <div class="container">
-      {% if counter % 10 != 0 and counter != 0 %}
-      <h1>{{ header }}</h1>
-      <p>{{ body1 }}</p>
-      <p>{{ body2 }}</p>
-      {% else %}
-      <p>That's enough ))) Let's see next year</p>
-      {% endif %}
-      <form method="POST">
-        <button type="submit">Generate Wish</button>
-      </form>
+    <div class="box">
+      <div class="left-field">
+        <img class="image-field" src="./static/images/left-field.svg" alt="" />
+      </div>
+      <div class="center-field">
+        <div>
+          <img class="image-title" src="./static/images/bd.svg" alt="" />
+        </div>
+        <div class="container">
+          {% if counter % 10 != 0 and counter != 0 %}
+          <h1>{{ header }}</h1>
+          <p>{{ body1 }}</p>
+          <p>{{ body2 }}</p>
+          {% else %}
+          <p>That's enough ;-)))</p>
+          <p>Let's see next year</p>
+          {% endif %}
+          <form method="POST">
+            <button type="submit">Generate Wish</button>
+          </form>
+        </div>
+      </div>
+      <div class="right-field">
+        <img class="image-field" src="./static/images/right-field.svg" alt="" />
+      </div>
     </div>
   </body>
 </html>
