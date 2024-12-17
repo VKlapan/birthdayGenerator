@@ -9,6 +9,11 @@ body {
   background-repeat: repeat-y;
   margin: 0;
 }
+
+a {
+  color: #fff;
+}
+
 h1 {
   color: #fff;
   font-size: 3rem;
